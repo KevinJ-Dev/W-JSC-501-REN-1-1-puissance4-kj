@@ -1,0 +1,49 @@
+:root{
+    --player-1: #FBBE00;
+    --player-2: #DB2B1E;
+    --puissance: #1E84D6;
+    --bg: #ffffff;
+}
+
+body{
+    text-align: center;
+}
+
+/* #restart{
+    visibility: hidden;
+} */
+
+ #game{
+    display: inline-block;
+    text-align: center;
+    background-color: var(--puissance);
+}
+  
+.col{
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    background-color: var(--bg);
+    border-radius: 50%;
+    margin: 5px;
+  }
+  
+.col.empty{
+    cursor: pointer;
+  }
+  
+.next-red{
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+  
+.next-yellow{
+    background-color: rgba(238, 255, 0, 0.2);
+  }
+  
+.col.red{
+    background-color: var(--player-2);
+  }
+  
+.col.yellow{
+    background-color: var(--player-1);
+  }
